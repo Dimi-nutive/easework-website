@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+}
+</style>
+<body>
+<div class="navbar">
+  <a class="active" href="#">Home</a> 
+  <a href="https://pypi.org/project/easework/">Install</a> 
+  <a href="about.html">About</a> 
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<section>
+    <img class="mySlides" src="banner easework.jpg"
+    style="width:100%">
+    <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4eLVpVh9NoMP5UclrgZN0IVo6E8Dp94EiA&usqp=CAU"
+    style="width:100%">
+  </section>
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+
+<section>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="easy to use.jpg"  style="width:100%">
+        <div class="container">
+          <h2>Easy to Use</h2>
+          <p class="title">Easework Syntax</p>
+          <p>Easework's syntax makes it accessible and easy.</p>
+          <p>Doesn't matter if he is a begginer or a expert</p>
+          <p><button class="button">EASEWORK</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="github.jpg" style="width:100%">
+        <div class="container">
+          <h2>Open Source</h2>
+          <p class="title">Development</p>
+          <p> Distributed under a MIT license</p>
+          <p> Easework is developed and maintained publicly on GitHub</p>
+          <p><button class="button">EASEWORK</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="maths.jpg"  style="width:100%">
+        <div class="container">
+          <h2>Good for calculation</h2>
+          <p class="title">Functions</p>
+          <p>Easework offers comprehensive mathematical functions</p>
+          <p>You can check the github for the functions list</p>
+          <p><button class="button">EASEWORK</button></p>
+      </div>
+    </div>
+</section>
+
+
+</body>
+<style>
+  footer {
+    text-align: left;
+    padding: 50px;
+    background-color: rgba(107, 178, 180, 0.767);
+    color: black;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <footer>
+    <div style="background-image: url('https://i.pinimg.com/originals/77/9b/fd/779bfd91a736d2e05a7493e1f72c0fbf.jpg');
+    background-size: cover; height:280px; padding-top: 70px; text-align: center;">
+    <p> To install : <a href="https://pypi.org/project/easework/">EASEWORK</a></p>
+    <p> Discord : <a href="https://discord.gg/zmUn2USr7V">link</a></p>
+
+    <p> Documentation : <a href="https://github.com/akulchaudhary07/easework/tree/main">GITHUB</a></p>
+    <p> Gmail : <a href="mailto:easework25@gmail.com">easework25@gmail.com</a></p>
+    </div>
+  </footer>
+  
+  </body>
+</html>
